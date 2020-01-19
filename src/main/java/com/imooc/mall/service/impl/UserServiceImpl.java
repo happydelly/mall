@@ -21,7 +21,7 @@ public class UserServiceImpl implements IUserService {
         //username不能重复
         int countByUsername = userMapper.countByUsername(user.getUsername());
         if(countByUsername>0){
-            throw new RuntimeException("该username已注册" );
+            throw new RuntimeException("该username已注册啦" );
         }
         //email不能重复
         int countByEmail = userMapper.countByEmail(user.getEmail());
