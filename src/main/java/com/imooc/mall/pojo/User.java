@@ -44,4 +44,5 @@ public class User {
         this.createTime = new Date();
         this.updateTime = this.createTime;
     }
+
 }

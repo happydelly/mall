@@ -13,4 +13,11 @@
         from mall_category
         where id = #{id}
     </select>
+
+    <select id="selectAll"  resultType="com.imooc.mall.pojo.Category">
+        select
+        <include refid="Base_Column_List" />
+        from mall_category
+        where status = 1
+    </select>
 </mapper>

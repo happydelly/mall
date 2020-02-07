@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+import java.util.List;
+
 //@Mapper
 public interface CategoryMapper {
 
@@ -13,4 +15,5 @@ public interface CategoryMapper {
 
     Category queryById(Integer id);
 
+    List<Category> selectAll();
 }
