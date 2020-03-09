@@ -20,7 +20,7 @@ public class CartController {
     @Autowired
     private ICartService cartService;
 
-    @PostMapping(value = "/carts/add12")
+    @PostMapping(value = "/carts/add")
     public ResponseVo<CartVo> add(@Valid @RequestBody CartAddForm cartAddForm, HttpSession session){
         User user = (User) session.getAttribute(MallConst.CURRENT_USER);
         return cartService.add(user.getId(),cartAddForm);
