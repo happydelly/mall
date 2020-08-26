@@ -3,15 +3,15 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       username: root
       password: 123456
-      url: jdbc:mysql://49.234.221.119:3306/mall?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      url: jdbc:mysql://49.234.221.119:33306/mall?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
   rabbitmq:
     addresses: 49.234.221.119
-    port: 5672
+    port: 35672
     username: guest
     password: guest
   redis:
     host: 49.234.221.119
-    port: 6379
+    port: 16379
 mybatis:
   configuration:
     map-underscore-to-camel-case: true

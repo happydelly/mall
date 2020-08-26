@@ -20,6 +20,7 @@ public class CategoryController {
 
     @GetMapping("/categories")
     public ResponseVo<List<CategoryVo>> selectAll() {
+
         return categoryService.selectAll();
     }
 

@@ -60,6 +60,12 @@ public class WebLogAspect {
     public void doAfterReturning(Object ret) throws Throwable {
     }
 
+    /**
+     * 在目标方法成功执行前后
+     * @param joinPoint
+     * @return
+     * @throws Throwable
+     */
     @Around("webLog()")
     public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
