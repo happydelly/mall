@@ -48,6 +48,7 @@ public class CartController {
 
     @PutMapping("/carts/selectAll")
     public ResponseVo<CartVo> selectAll(HttpSession session){
+        System.out.println("1111");
         User user = (User) session.getAttribute(MallConst.CURRENT_USER);
         return cartService.selectAll(user.getId());
     }
